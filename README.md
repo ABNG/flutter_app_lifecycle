@@ -1,4 +1,4 @@
-# flutterskypeclone
+# flutter_app_lifecycle
 
 A new Flutter application.
 
