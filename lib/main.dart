@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterskypeclone/second_Screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -61,6 +62,21 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Center(
+        child: MaterialButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (BuildContext context) {
+                return SecondScreen();
+              }),
+            );
+          },
+          color: Colors.red,
+          child: Text("Click Me"),
+        ),
+      ),
+    );
   }
 }
